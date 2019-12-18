@@ -28,5 +28,5 @@ build:
 publish:
   steps:
     - internal/publish-step:
-        owner: Damith Rushika Kothalawala
+        owner: damith
 
