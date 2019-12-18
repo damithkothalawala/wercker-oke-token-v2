@@ -5,9 +5,21 @@ tags:
   - kubernetes
   - kubectl
 properties:
-- name: token
+- name: tenancy
   type: string
-  required: false
+  required: true
+- name: user
+  type: string
+  required: true
+- name: region
+  type: string
+  required: true
+- name: private_key
+  type: string
+  required: true
+- name: fingerprint
+  type: string
+  required: true
 - name: username
   type: string
   required: false
