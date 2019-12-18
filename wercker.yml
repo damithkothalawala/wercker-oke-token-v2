@@ -24,7 +24,9 @@ build:
         - script:
            name: install oci cli
            code: |
-               bash -c "$(curl -L https://raw.githubusercontent.com/oracle/oci-cli/master/scripts/install/install.sh)" --accept-all-defaults
+                curl -L https://raw.githubusercontent.com/oracle/oci-cli/master/scripts/install/install.sh > install.sh
+                chmod +x install.sh
+                ./install.sh --accept-all-defaults
     
         - script:
             name: prepare output
