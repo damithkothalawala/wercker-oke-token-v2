@@ -4,6 +4,8 @@ kubectl="$WERCKER_STEP_ROOT/kubectl"
 
 main() {
   display_version
+  
+  oci --help
 
   if [ -z "$WERCKER_KUBECTL_COMMAND" ]; then
     fail "wercker-kubectl: command argument cannot be empty"
