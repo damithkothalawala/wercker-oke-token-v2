@@ -27,7 +27,7 @@ build:
                 curl -L https://raw.githubusercontent.com/oracle/oci-cli/master/scripts/install/install.sh > install.sh
                 chmod +x install.sh
                 ./install.sh --accept-all-defaults
-                mkdir -f ~/.oci
+                mkdir ~/.oci
                 cat > ~/.oci/config << EOF 
                 [DEFAULT]
                 user=ocid1.user.oc1..aaaaaaaa7o7qiwmqwi4ejs7woh6qim4xtizp76nq2mje7wioj5eh5r7kmz3a
