@@ -1,5 +1,5 @@
-name: kubectl
-version: 3.14.0
+name: wercker-oke-token-v2
+version: 3.14.1
 summary: Step to run kubectl
 tags:
   - kubernetes
