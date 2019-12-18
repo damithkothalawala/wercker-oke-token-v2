@@ -20,7 +20,12 @@ build:
                 sha256sum kubernetes-client-linux-amd64.tar.gz | grep -q "$KUBERNETES_SHA256"
                 tar xvzf kubernetes-client-linux-amd64.tar.gz
                 kubernetes/client/bin/kubectl version --client
-
+                
+        - script:
+           name: install oci cli
+           code: |
+               bash -c "$(curl -L https://raw.githubusercontent.com/oracle/oci-cli/master/scripts/install/install.sh)" --accept-all-defaults
+    
         - script:
             name: prepare output
             code: cp "kubernetes/client/bin/kubectl" "LICENSE" "README.md" "run.sh" "wercker.yml" "step.yml" "$WERCKER_OUTPUT_DIR"
